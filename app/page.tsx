@@ -1,4 +1,5 @@
 import { Introduction } from "@/components/introduction";
+import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { GitHubCalendar } from "react-github-calendar";
@@ -14,6 +15,8 @@ export default function Home() {
         </div>
 
         <Skills />
+
+        <Projects />
       </BlurFade>
     </div>
   );
