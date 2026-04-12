@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { CloudHail, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 
 type ProjectCardProps = {
   project: {

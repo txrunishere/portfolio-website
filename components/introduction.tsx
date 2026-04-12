@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Heading } from "./heading";
 
 export const Introduction = () => {
@@ -11,12 +12,17 @@ export const Introduction = () => {
             </span>{" "}
             <span>👋</span>
           </h1>
-          <p className="font-space-grotesk font-semibold text-neutral-500 md:text-2xl dark:text-neutral-300">
+          <p className="font-space-grotesk max-w-60 font-semibold text-neutral-500 md:max-w-full md:text-2xl dark:text-neutral-300">
             Full Stack Web Developer from India.
           </p>
         </div>
-        {/* REPLACE THIS DIV WITH IMAGE */}
-        <div className="size-24 rounded-full bg-neutral-800 md:size-32" />
+        <Image
+          src={"/me.jpeg"}
+          alt="me"
+          width={120}
+          height={120}
+          className="size-24 rounded-full md:size-32"
+        />
       </div>
 
       <div>
