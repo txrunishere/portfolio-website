@@ -42,6 +42,10 @@ const projects: Project[] = [
         type: "github",
         href: "https://github.com/txrunishere/tagtrack",
       },
+      {
+        type: "website",
+        href: "https://tag-track.vercel.app",
+      },
     ],
   },
 ] as const;
