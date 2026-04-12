@@ -1,8 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  allowedDevOrigins: [process.env.ORIGIN!],
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
