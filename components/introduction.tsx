@@ -28,10 +28,9 @@ export const Introduction = () => {
       <div>
         <Heading>About</Heading>
         <p className="font-sans text-sm text-neutral-400">
-          A passionate developer learning full-stack development. I love
-          building projects with Javascript, Typescript, React, and backend
-          technologies. I'm constantly improving my skills to become a better
-          developer
+          I love building projects with Javascript, Typescript, React, and
+          backend technologies. I'm constantly improving my skills to become a
+          better developer
         </p>
       </div>
     </div>

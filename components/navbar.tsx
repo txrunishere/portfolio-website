@@ -81,7 +81,7 @@ export const Navbar = () => {
   return (
     <div className="fixed bottom-4 mx-auto w-full">
       <Dock
-        className="rounded-full bg-[#0A0A0A]"
+        className="h-12 bg-[#0A0A0A] sm:h-14"
         direction="middle"
         disableMagnification
       >

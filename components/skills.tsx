@@ -29,7 +29,7 @@ export const Skills = () => {
         {skills.map((skill) => (
           <div
             key={skill}
-            className="rounded-sm bg-neutral-900 px-1.5 py-1 text-sm text-gray-50"
+            className="rounded-sm bg-neutral-900 px-1.5 py-1 text-xs text-gray-50 sm:text-sm"
           >
             {skill}
           </div>

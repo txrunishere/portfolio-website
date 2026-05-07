@@ -22,7 +22,14 @@ const projects: Project[] = [
     description:
       "A modern social media app that lets users create posts and engage by liking and saving content.",
     image: "/pov-show.png",
-    stack: [],
+    stack: [
+      "React",
+      "Appwrite",
+      "React Router",
+      "Tanstack Query",
+      "Zod",
+      "React hook form",
+    ],
     source: [
       {
         type: "github",
@@ -36,7 +43,14 @@ const projects: Project[] = [
     description:
       "A modern full-stack app for tracking and managing tagged items, featuring price charts and auto email alerts on price drops.",
     image: "/tagtrack-show.png",
-    stack: [],
+    stack: [
+      "NextJS",
+      "Shadcn",
+      "Supabase",
+      "Firecrawl",
+      "Nodemailer",
+      "Recharts",
+    ],
     source: [
       {
         type: "github",
@@ -45,6 +59,27 @@ const projects: Project[] = [
       {
         type: "website",
         href: "https://tag-track.vercel.app",
+      },
+    ],
+  },
+  {
+    id: 3,
+    description:
+      "Nestly is a modern real estate app for exploring and discovering properties with a clean UI, smooth experience",
+    image: "/nestly-show.jpeg",
+    name: "Nestly",
+    stack: [
+      "React Native",
+      "Expo",
+      "Clerk",
+      "NativeWind",
+      "Zustand",
+      "Supabase",
+    ],
+    source: [
+      {
+        type: "github",
+        href: "https://github.com/txrunishere/Nestly",
       },
     ],
   },

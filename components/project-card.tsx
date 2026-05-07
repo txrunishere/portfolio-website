@@ -15,17 +15,15 @@ type ProjectCardProps = {
   };
 };
 
-type GithubIconProps = {
-  width?: number;
-  height?: number;
-  color?: string;
-};
-
 const GithubIcon = ({
   color = "white",
   height = 20,
   width = 20,
-}: GithubIconProps) => (
+}: {
+  width?: number;
+  height?: number;
+  color?: string;
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}
@@ -52,7 +50,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           src={project.image}
           alt={project.name}
           fill
-          className="object-cover object-top transition duration-300 group-hover:scale-105"
+          className="object-contain object-top transition duration-300 group-hover:scale-105"
         />
 
         <div className="absolute inset-0 flex items-center justify-center gap-6 bg-black/60 opacity-0 transition group-hover:opacity-100">
@@ -76,8 +74,10 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 
       <div className="flex flex-1 flex-col gap-3 p-4">
         <div>
-          <h4 className="text-lg font-semibold">{project.name}</h4>
-          <p className="mt-1 text-sm text-neutral-400">{project.description}</p>
+          <h4 className="font-semibold sm:text-lg">{project.name}</h4>
+          <p className="mt-1 text-xs text-neutral-400 sm:text-sm">
+            {project.description}
+          </p>
         </div>
 
         {project.stack.length > 0 && (
@@ -85,7 +85,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             {project.stack.map((tech) => (
               <span
                 key={tech}
-                className="rounded-md bg-neutral-800 px-2 py-1 text-xs text-neutral-300"
+                className="font-space-grotesk rounded-md bg-neutral-800 px-2 py-1 text-xs text-neutral-300"
               >
                 {tech}
               </span>
