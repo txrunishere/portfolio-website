@@ -11,6 +11,7 @@ export const Skills = () => {
     "Express",
     "React",
     "Nextjs",
+    "Tanstack Start",
     "TailwindCSS",
     "Supabase",
     "PostgresSQL",

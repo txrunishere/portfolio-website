@@ -41,7 +41,7 @@ const projects: Project[] = [
     id: 2,
     name: "TagTrack",
     description:
-      "A modern full-stack app for tracking and managing tagged items, featuring price charts and auto email alerts on price drops.",
+      "A product price tracker that helps users monitor online products and receive instant email alerts whenever prices decrease, ensuring they never miss a deal.",
     image: "/tagtrack-show.png",
     stack: [
       "NextJS",
@@ -82,6 +82,20 @@ const projects: Project[] = [
         href: "https://github.com/txrunishere/Nestly",
       },
     ],
+  },
+  {
+    id: 4,
+    description:
+      "An AI travel planning assistant that generates personalized itineraries and lets users chat with the agent to modify plans, discover places, and get travel recommendations.",
+    name: "Wayfarer",
+    image: "/wayfarer.png",
+    source: [
+      {
+        type: "github",
+        href: "http://github.com/txrunishere/Wayfarer",
+      },
+    ],
+    stack: ["Tanstack Start", "Vercel AI-SDK", "Google Gemini"],
   },
 ] as const;
 
